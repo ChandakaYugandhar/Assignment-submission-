@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Register form</title>
+        <link rel="stylesheet" type="text/css"   href="day4.css" >
+    </head>
+    <body>
+        <img src="LestsUpgrade.png" width="300" height="150">
+        <form>
+            <label>First name: <input type="text"name="first name"placeholder="first name"required></label>
+            <label>Last name: <input type="text"name="last name"placeholder="lastname" required></label> <br>
+            
+            <label >Male <input class="display" type="radio" name="gender" value="male"></label>
+            <label >Female <input class="display" type="radio" name="gender" value="Female"></label>
+            <label >Other<input class="disaplay" type="radio" name="gender" value="Other"></label> <br>
+            <label>Email: <input type="email"name="email"placeholder="your email"required></label>
+            <label>password: <input type="password"name="password"placeholder="your password"pattern=".{5,10}" required title="please enter password of length 5 to 10"></label>
+            <br> 
+            <label for="">Birthday:<input type="date"></label> <br>
+            <label>seclect Languages :</label><br>
+            <div class="select">
+                <select name="language" id="lang">
+                    <option value="html">HTML & CSS</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="css">Data Science</option>
+                    <option value="css">PHP</option>
+                </select>
+            </div><br><br>
+        <label> I agree to the terms and conditions
+            <input type="checkbox" name="check">
+        </label><br> 
+        
+          <input class="submit" type="submit" name= "submit">
+
+    </form>
+</body>
+</html>
